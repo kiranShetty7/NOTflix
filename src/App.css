@@ -1,0 +1,9 @@
+.appTheme{
+ background-color: black;
+}
+
+.appContainer{
+  height:100vh;
+  width:100vw;
+  box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+.glassCss{
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform 0.3s ease-in-out; 
+}
+
+.glassCss:hover {
+    background: rgba( 65, 58, 58, 0.15 );
+    transform: translateY(-20px)
+}
+
+.cardCss{
+    padding: 0.5rem;
+     display: flex ;
+     flex-direction: column;
+     cursor: pointer;
+}
+
