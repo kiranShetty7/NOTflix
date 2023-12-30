@@ -1,20 +1,171 @@
-.viewMovieContainer{
-    position:absolute;
-    z-index: 2;
-    height:74%;
-    background-color:black;
-    width:90%;
-    top:53%;
-    left:50%;
-    padding:1.5rem;
-    transform: translate(-50%,-50%);
+.viewMovieContainer {
+  position: absolute;
+  z-index: 2;
+  height: 76vh;
+  background-color: black;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  padding: 1.5rem;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
 }
 
-.glassCss{
-    background: rgba( 0, 0, 0, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+.glassCss {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.closeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movieTitle {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.closeIcon {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.contentContainer {
+  height: 100%;
+}
+
+.trialerScreen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.infoContainer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.description {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.overView {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.rating {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.cast {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 20px;
+  overflow: auto;
+}
+
+.image {
+  height: 16rem;
+  width: 12rem;
+}
+
+@media (max-width: 1300px) {
+  .overView {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .rating {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .cast {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    height: 10rem;
+    width: 8rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .overView {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .rating {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .cast {
+    font-size: 1.5rem;
+  }
+
+  .image {
+    height: 10rem;
+    width: 8rem;
+  }
+
+  .viewMovieContainer {
+    height: 70vh;
+    padding: 1rem;
+    top: 52%;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .movieTitle {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .trialerScreen {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .description {
+    color: #fff;
+    font-size: 1.25rem;
+  }
+
+  .infoContainer {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
 }

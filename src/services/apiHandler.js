@@ -11,9 +11,9 @@ export const getMovies = () => {
             const URL = 'https://api.themoviedb.org/3/discover/movie?api_key=d342456f3548dd3806a43a3876aa140a'
             const CONFIG = {
                 headers: {
-                    'Content-Type': 'application/json', 
+                    'Content-Type': 'application/json',
                 },
-            
+
             };
             const response = await HttpClient.get(URL, CONFIG)
             resolve(response)
@@ -30,9 +30,9 @@ export const getMovieDetailsById = (id) => {
             const URL = `https://api.themoviedb.org/3/movie/${id}/credits?api_key=d342456f3548dd3806a43a3876aa140a`
             const CONFIG = {
                 headers: {
-                    'Content-Type': 'application/json', 
+                    'Content-Type': 'application/json',
                 },
-   
+
             };
             const response = await HttpClient.get(URL, CONFIG)
             resolve(response)
@@ -49,8 +49,46 @@ export const getYoutubeVideoKey = (id) => {
             const URL = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=d342456f3548dd3806a43a3876aa140a`
             const CONFIG = {
                 headers: {
-                    'Content-Type': 'application/json', 
+                    'Content-Type': 'application/json',
                 },
+            };
+            const response = await HttpClient.get(URL, CONFIG)
+            resolve(response)
+        }
+        catch (error) {
+            reject(error)
+        }
+    })
+}
+
+export const getTrendingMovies = () => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const URL = 'https://api.themoviedb.org/3/trending/movie/week?api_key=d342456f3548dd3806a43a3876aa140a'
+            const CONFIG = {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+
+            };
+            const response = await HttpClient.get(URL, CONFIG)
+            resolve(response)
+        }
+        catch (error) {
+            reject(error)
+        }
+    })
+}
+
+export const getTvSeries = () => {
+    return new Promise(async (resolve, reject) => {
+        try {
+            const URL = 'https://api.themoviedb.org/3/trending/tv/week?api_key=d342456f3548dd3806a43a3876aa140a'
+            const CONFIG = {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+
             };
             const response = await HttpClient.get(URL, CONFIG)
             resolve(response)

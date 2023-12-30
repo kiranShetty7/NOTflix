@@ -1,0 +1,33 @@
+.container {
+  margin: 1px;
+  width: 20rem;
+  border: 1px solid white !important;
+}
+
+.icon {
+  color: #fff !important;
+  font-size: 2rem;
+}
+
+.textField {
+  color: #fff !important;
+}
+
+@media (max-width: 800px) {
+  .icon {
+    font-size: 1rem !important;
+  }
+
+  .container {
+    margin: 0px;
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid white !important;
+  }
+
+  .textField {
+    color: #fff !important;
+    font-size: 1rem;
+    height: 2rem;
+  }
+}

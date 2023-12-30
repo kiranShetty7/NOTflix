@@ -1,0 +1,87 @@
+.glassCss {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease-in-out;
+}
+
+.glassCss:hover {
+  background: rgba(65, 58, 58, 0.15);
+  transform: translateY(-20px);
+}
+
+.cardCss {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.container {
+  height: 75vh;
+  overflow-y: auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.image {
+  height: 30rem;
+  width: 20rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1rem;
+  min-height: 4rem;
+  max-width: 20rem;
+}
+
+.dataContainer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.heartButtonContainer {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.heart {
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .image {
+    height: 8rem;
+    width: 8rem;
+  }
+  .title {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+    min-height: 2rem;
+    overflow: none;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+  }
+  .dataContainer {
+    font-size: 0.75rem;
+  }
+  .container {
+    gap: 10px;
+    padding: 1rem;
+  }
+}
