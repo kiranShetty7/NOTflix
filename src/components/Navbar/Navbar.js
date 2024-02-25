@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className={classes.container}>
       <span className={classes.title}><LiveTvIcon className={classes.icon} />&nbsp; <span className={classes.text}>Notflix</span></span>
-      <SearchBar />
+      {/* <SearchBar /> */}
     </div>
   )
 }
