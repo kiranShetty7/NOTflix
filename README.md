@@ -4,7 +4,7 @@ Welcome to Notflix, a React-based web app that brings you an effortless and imme
 
 ## Demo
 
-Check out our live demo [here](https://notflix-2vwu.onrender.com/).
+Check out the live demo [here](https://notflix-2vwu.onrender.com/).
 
 
 ## Features
